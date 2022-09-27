@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        .main{
+            width: 700px;
+            height: 160px;
+            border: 1px solid gray;
+            display: flex;
+position: relative;
+left: 80px; 
+top: 40px;           
+        }
+.mainscreen{
+    border: 1px solid gray;
+    height: 600px;
+    width: 727px;
+    position: relative;
+    left: 80px;
+    top: 40px;
+}
+.item1{
+    border: 1px solid gray;
+    height: 160px;
+    width:180px;
+    /* position: relative;
+    left: 4px;
+    top: 4px; */
+}
+.item2{
+    border: 1px solid gray;
+    height: 160px;
+    width:180px;
+    /* position: relative;
+    left: 200px;
+    top: -198px; */
+}
+.item3{
+    border: 1px solid gray;
+    height: 160px;
+    width:180px;
+    /* position: relative;
+    left: 400px;
+    top: -400px; */
+}
+.item4{
+    border: 1px solid gray;
+    height: 160px;
+    width:180px;
+    /* position: relative;
+    left: 790px;
+    top: -602px; */
+}
+.des{
+    border: 1px solid gray;
+    height: 762px;
+    width: 527px;
+    position: relative;
+    left: 80px;
+    top: 40px;
+    padding: 15px;
+    
+}
+.z{
+    display: flex;
+}
+
+h1{
+    font-weight: bold;
+}
+button{
+    background-color: blue;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    top: 60px;
+    left: 20px;
+
+}
+span{
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    
+}
+.jas{
+    /* display: none; */
+}
+#cd{
+    display: none;
+}
+#ef{
+    display: none;
+}
+#ij{
+    display: none;
+}
+#gh{ display: none;}
+    </style>
+</head>
+<body>
+<div class="z">
+    <div>
+    <div class="mainscreen"  ><img src="images/perfume-2142824__340.webp" alt="jasmine"style="height:600px;width: 726px;" id="xy"></div>
+    <div class="main">
+    <div class="item1" ><img src="images/bless_1_.webp" alt="bless pour home" style="height:160px;width: 180px;" onclick="changescreen(this.src)"></div>
+    <div class="item2" ><img src="images/BYRDIE-15-best-places-to-buy-perfume-online-4777034-recirc-c1c4d8cefffe4ec38d2fd8cd1248d446.jpg" alt="Rose pink"style="height:160px;width: 180px;"onclick="changescreen2(this.src)"></div>
+    <div class="item3" ><img src="images/maxresdefault.jpg" alt="pure black"style="height:160px;width: 180px;"onclick="changescreen3(this.src)"></div>
+    <div class="item4"><img src="images/Yves Saint Laurent Mon Paris.webp" alt="lovely bee"style="height:160px;width: 180px;"onclick="changescreen4(this.src)"></div>
+    </div></div>
+    <!-- jasmine -->
+    <div class="des jas" id="ab">
+        <h1>Jasmine</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam officia tempore labore voluptates ea porro hic laudantium omnis. 
+        Sunt cupiditate hic tenetur laudantium, voluptate impedit beatae blanditiis possimus sequi ex.</p>
+<span>3000 PKR</span>
+<button>Add to cart</button></div>
+<!-- bless pour home -->
+<div class="des bless " id="cd">
+    <h1>Bless  pour home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam officia tempore labore voluptates ea porro hic laudantium omnis. 
+        Sunt cupiditate hic tenetur laudantium, voluptate impedit beatae blanditiis possimus sequi ex.</p>
+<span>3500 PKR</span>
+<button>Add to cart</button></div>
+<!-- rose pink -->
+<div class="des pink " id="ef">
+    <h1>Rose pink</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam officia tempore labore voluptates ea porro hic laudantium omnis. 
+        Sunt cupiditate hic tenetur laudantium, voluptate impedit beatae blanditiis possimus sequi ex.</p>
+<span>2500 PKR</span>
+<button>Add to cart</button></div>
+<!-- pure black -->
+<div class="des black" id="gh">
+    <h1>pure black</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam officia tempore labore voluptates ea porro hic laudantium omnis. 
+        Sunt cupiditate hic tenetur laudantium, voluptate impedit beatae blanditiis possimus sequi ex.</p>
+<span>4000 PKR</span>
+<button>Add to cart</button></div>
+<!-- lovely bee -->
+<div class="des bee " id="ij">
+    <h1>Lovely bee</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam officia tempore labore voluptates ea porro hic laudantium omnis. 
+        Sunt cupiditate hic tenetur laudantium, voluptate impedit beatae blanditiis possimus sequi ex.</p>
+<span>5000 PKR</span>
+<button>Add to cart</button></div>
+    </div>
+<script>
+    function changescreen(a){
+        document.getElementById("xy").src=a;
+        document.getElementById("cd").style.display='block';
+        document.getElementById("ab").style.display='none';
+        document.getElementById("ef").style.display='none';
+        document.getElementById("gh").style.display='none';
+        document.getElementById("ij").style.display='none';
+    }
+    function changescreen2(b){
+        document.getElementById("xy").src=b;
+        document.getElementById("ef").style.display='block';
+        document.getElementById("ab").style.display='none';
+        document.getElementById("cd").style.display='none';
+        document.getElementById("gh").style.display='none';
+        document.getElementById("ij").style.display='none';
+    }
+    function changescreen3(c){
+        document.getElementById("xy").src=c;
+        document.getElementById("gh").style.display='block';
+        document.getElementById("ab").style.display='none';
+        document.getElementById("cd").style.display='none';
+        document.getElementById("ef").style.display='none';
+        document.getElementById("ij").style.display='none';
+    }
+    function changescreen4(d){
+        document.getElementById("xy").src=d;
+        document.getElementById("ij").style.display='block';
+        document.getElementById("ab").style.display='none';
+        document.getElementById("cd").style.display='none';
+        document.getElementById("gh").style.display='none';
+        document.getElementById("ef").style.display='none';
+    }
+</script>
+</body>
+</html>

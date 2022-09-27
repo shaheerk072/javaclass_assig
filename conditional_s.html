@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+    <style>
+span{
+    color: red;
+    font-size: 10px;
+    font-weight: lighter;
+
+}
+#main{
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <label for="" >Name:</label>
+    <input type="text" placeholder="enter your username here" id="in">
+    <br>
+    <span id="sn"></span>
+    <br><br>
+    <label for="">Email:</label>
+    <input type="email" placeholder="enter your email address " id="ie">
+    <br>
+    <span id="se"></span>
+    <br><br>
+    <button type="submit" onclick="fun()">submit</button>
+    <div  id="main"></div>
+
+    
+
+
+
+<script>
+    function fun(){
+let name=document.getElementById("in").value;
+let email=document.getElementById("ie").value;
+if(name=="Fiza" && email=="fiza@gmail.com"){
+    document.getElementById("main").innerHTML="Welcome "+ name;
+    document.getElementById("sn").innerHTML=" ";
+    document.getElementById("se").innerHTML=" ";
+}
+else if(name!="Fiza" && email!="fiza@gmail.com"){
+    document.getElementById("sn").innerHTML="invalid username";
+    document.getElementById("se").innerHTML="invalid email address";
+    document.getElementById("main").innerHTML=" ";
+}
+else if(name!="Fiza" && email=="fiza@gmail.com"){
+    document.getElementById("sn").innerHTML="invalid username";
+    document.getElementById("se").innerHTML=" ";
+    document.getElementById("main").innerHTML=" ";
+}
+else if(name=="Fiza" && email!="fiza@gmail.com"){
+    document.getElementById("sn").innerHTML=" ";
+    document.getElementById("se").innerHTML="invalid email address";
+    document.getElementById("main").innerHTML=" ";
+
+    }
+    }
+</script>
+</body>
+</html>
